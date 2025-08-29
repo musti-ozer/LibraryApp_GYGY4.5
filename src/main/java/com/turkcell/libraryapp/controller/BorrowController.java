@@ -16,7 +16,7 @@ public class BorrowController {
         return "Öğrencinin ödünç aldığı kitaplar listelendi (dummy)";
     }
 
-    @PostMapping("/{bookId}/return")
+    @PostMapping("/return/{bookId}")
     public String returnBook(@PathVariable Long bookId) {
         return "Kitap iade edildi: ID = " + bookId;
     }
